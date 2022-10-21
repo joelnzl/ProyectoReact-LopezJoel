@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+
 import './App.css';
 
-function App() {
+import { Header } from './components/Header';
+import { Main } from './components/Main';
+import { Footer } from './components/Footer';
+import { Navbar } from './components/Navbar';
+import ItemListContainer from './components/ItemListContainer';
+
+ 
+
+const App = () => {
+  
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Joel Lopez
-        </a>
-      </header>
-    </div>
+
+    <>
+
+  <Navbar/>
+  <ItemListContainer/>
+  <Header/>
+  <Main buy="BUY THINGS"/>
+  <Footer/>
+    
+     
+    </>
+ 
   );
-}
+};
+  
 
 export default App;
